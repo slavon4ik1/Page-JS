@@ -1,4 +1,6 @@
-let header      = document.createElement('header'),
+window.addEventListener('DOMContentLoaded', () => {
+  'use strict';
+  let header      = document.createElement('header'),
     menu        = document.createElement('ul'),
     headerCont  = document.createElement('div'),
     headerTitle = document.createElement('h1'),
@@ -15,7 +17,7 @@ let menuItem    = document.getElementsByTagName('li'),
 function body() {
   document.body.style.margin = '0';
   document.body.style.padding = '0';
-  document.head.innerHTML = '<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Create by JS</title>';
+  document.head.innerHTML = '<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Create by JS</title>';
 }  
   
 function addChild() {
@@ -159,3 +161,4 @@ if(widthWindow > 1400) {
   headerCont.style.top = '200px';
   socialLink.style.margin = '600px 0 0 70px';
   }
+});
